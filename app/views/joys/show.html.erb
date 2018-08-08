@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @joy.name %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @joy.activity %>
+</p>
+
+<%= link_to 'Edit', edit_joy_path(@joy) %> |
+<%= link_to 'Back', joys_path %>

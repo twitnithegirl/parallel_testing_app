@@ -1,0 +1,2 @@
+module BoredomsHelper
+end

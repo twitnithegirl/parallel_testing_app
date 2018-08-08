@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @felicity.name %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @felicity.activity %>
+</p>
+
+<%= link_to 'Edit', edit_felicity_path(@felicity) %> |
+<%= link_to 'Back', felicities_path %>

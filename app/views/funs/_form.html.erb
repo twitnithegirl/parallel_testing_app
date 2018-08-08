@@ -1,0 +1,27 @@
+<%= form_with(model: fun, local: true) do |form| %>
+  <% if fun.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fun.errors.count, "error") %> prohibited this fun from being saved:</h2>
+
+      <ul>
+      <% fun.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activity %>
+    <%= form.text_field :activity %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

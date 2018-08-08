@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @boredom.name %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @boredom.activity %>
+</p>
+
+<%= link_to 'Edit', edit_boredom_path(@boredom) %> |
+<%= link_to 'Back', boredoms_path %>

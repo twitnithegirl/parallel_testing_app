@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Malices</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Activity</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @malices.each do |malice| %>
+      <tr>
+        <td><%= malice.name %></td>
+        <td><%= malice.activity %></td>
+        <td><%= link_to 'Show', malice %></td>
+        <td><%= link_to 'Edit', edit_malice_path(malice) %></td>
+        <td><%= link_to 'Destroy', malice, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Malice', new_malice_path %>

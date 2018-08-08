@@ -1,0 +1,2 @@
+class Malice < ApplicationRecord
+end
